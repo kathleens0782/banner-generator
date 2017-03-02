@@ -7,22 +7,49 @@
   src="https://code.jquery.com/jquery-3.1.1.js"></script>
     <script>
     $(function(){
-        $("p").click(function(){
-            alert("...");
+        $("button").click(function(){
+            var name = $('#name').val();
+            $('h4').html("Congrats, " +name + "!");
+            
+            var date = $('#date').val();
+            $('h3').html("The date you recieved this was at " +date+ "!");
+            
+            var accom = $('#accom').val();
+            $('h2').html("You managed to " +accom+ "!");
+            
+            var color = $('#color').val();
+            $('#banner').css();
+            
         });
     });
     </script>
+    
 <style>
+ #banner { border: 4px solid;
+    height: 150px;
+    background: '#color';
+ }    
     
-    
-    </style>
-  </head>
-  <body>
-<p>Click here to see the result!</p>
-<form>Name <input id="name"><br>
-Date <input id="date"><br>
-Accomplishment <input id=""><br>
-Color <input type="color"></form>
+</style>
 
+  </head>
+  
+  <body>
+<h1>[A pretty cool banner generator]</h1>
+      
+<p><strong>Click here to see the result!</strong></p>
+
+
+Name <input type="name" id="name"><br>
+Date <input type="date" id="date"><br>
+Accomplishment <input type="text" id="accom"><br>
+Color <input type="color" id="color"><br>
+<button>Click here to generate!</button><br>
+<br>
+<div id = 'banner'>
+<h4></h4>
+<h3></h3>
+<h2></h2>
+</div>
   </body>
 </html>
