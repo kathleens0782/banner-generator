@@ -18,32 +18,33 @@
             $('h2').html("You've managed to " +accom+ "!");
 
             var color = $('#color').val();
+            $('#banner').css('background-color', color);
+            
+            var color = $('#color2').val();
             $('#banner').css('color', color);
         });
     });
     </script>
     
 <style>
- #banner { border: 4px solid;
+ #banner {border: 4px solid;
+ border: 4px solid;
     height: 150px;
-    background: 'color';
-    font-family: "Comic Sans MS";
+    background: white;
+    font-family: "Courier New";
+
  }    
-    
 </style>
 
   </head>
   
   <body>
-<h1>[A pretty cool banner generator]</h1>
-      
-<p><strong>Click here to see the result!</strong></p>
-
-
+<h1>[A banner generator]</h1>
 Name <input type="name" id="name"><br>
 Date <input type="date" id="date"><br>
 Accomplishment <input type="text" id="accom"><br>
 Color <input type="color" id="color"><br>
+Text Color <input type="color" id="color2"><br>
 <button>Click here to generate!</button><br>
 <br>
 <div id = 'banner'>
