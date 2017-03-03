@@ -15,11 +15,10 @@
             $('h3').html("The date you recieved this was at " +date+ "!");
             
             var accom = $('#accom').val();
-            $('h2').html("You managed to " +accom+ "!");
-            
+            $('h2').html("You've managed to " +accom+ "!");
+
             var color = $('#color').val();
-            $('#banner').css();
-            
+            $('#banner').css('color', color);
         });
     });
     </script>
@@ -27,7 +26,8 @@
 <style>
  #banner { border: 4px solid;
     height: 150px;
-    background: '#color';
+    background: 'color';
+    font-family: "Comic Sans MS";
  }    
     
 </style>
